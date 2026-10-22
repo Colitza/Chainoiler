@@ -1,0 +1,49 @@
+feature,area,priority,original,clone,notes
+Request location permission and detect current region,onboarding,must,yes,no,S01
+Download a map region for offline use,maps,must,yes,no,S04; own OSM-derived files not OsmAnd .obf
+Region tree with sizes and download progress,maps,must,yes,no,S04
+Delete a downloaded region,maps,must,yes,no,F07
+Offline vector map with pan zoom rotate,map,must,yes,no,S02
+Follow my position with heading,map,must,yes,no,S02
+Night mode map,map,must,yes,no,auto by sunset in original
+Offline search by address and place name,search,must,yes,no,S05
+Search by POI category (fuel etc),search,must,yes,no,S05; fuel stations matter for riders
+Point context menu with directions and save,map,must,yes,no,S06
+Offline route calculation,navigation,must,yes,no,S07
+Motorcycle routing profile,navigation,must,yes,no,S07 S15
+Avoid motorways / tolls / unpaved / ferries,navigation,must,yes,no,S08; exact option list medium confidence
+Turn-by-turn guidance with next-turn panel,navigation,must,yes,no,S10
+Voice guidance via text-to-speech,navigation,must,yes,no,S10; use Android TTS not OsmAnd voice packs
+Offline recalculation when off route,navigation,must,yes,no,S10
+Guidance keeps running with screen off / in background,navigation,must,yes,no,foreground service
+Start pause and save trip recording,recording,must,yes,no,S11
+Recording as a foreground service with notification,recording,must,yes,no,S11
+Track list of recorded rides,recording,must,yes,no,S12
+Track details with distance duration avg/max speed,recording,must,yes,no,S13
+Waypoints / intermediate destinations,navigation,should,yes,no,F03
+Route details turn list and elevation graph,navigation,should,yes,no,S09
+Lane guidance,navigation,should,yes,no,S10; depends on OSM lane tags
+Speed and speed-limit widgets,navigation,should,yes,no,S10
+ETA distance and time remaining widgets,navigation,should,yes,no,S10
+Update a downloaded region when a newer version exists,maps,should,yes,no,S04
+Favourites with groups,places,should,yes,no,S14
+Export / share a track as GPX,recording,should,yes,no,S13
+Import a GPX track and follow it,recording,should,yes,no,S12
+Speed and elevation graphs for a track,recording,should,yes,no,S13
+Recording settings (interval min accuracy auto-split),recording,should,yes,no,S17
+Record while navigating,recording,should,yes,no,F04 edge
+Plan a route by tapping and save as GPX,planning,could,yes,no,S18
+Map style picker / touring style,map,could,yes,no,S16; own style
+Map layers toggle (favourites tracks POI),map,could,yes,no,S16
+Search history,search,could,yes,no,S05
+Coordinate search,search,could,yes,no,S05
+Multiple profiles with own settings,settings,could,yes,no,S15
+Android Auto,navigation,could,yes,no,large extra surface; verify gating
+Chainoiler odometer: total km and km since last oil,clone-only,could,no,no,not in OsmAnd; clone addition fed from recorded tracks
+OsmAnd Cloud backup and sync,sync,skip,yes,skip,their paid service; personal tool does not need it
+Wikipedia / Wikivoyage offline articles,content,skip,yes,skip,separate licensed content outside the slice
+Weather layer,content,skip,yes,skip,Pro feature needing a data feed
+Hourly live map updates,maps,skip,yes,skip,Pro feature on their servers
+Contour lines and hillshade,map,skip,yes,skip,Maps+; possible later from public SRTM data
+OsmAnd .obf map files and download servers,maps,skip,yes,skip,they own the files and servers; build own pipeline from OSM ODbL extracts
+Purchases and paywall,monetization,skip,yes,skip,personal tool
